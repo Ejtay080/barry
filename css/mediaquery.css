@@ -1,0 +1,295 @@
+@font-face{
+    font-family: "barry";
+    src: url("../css/fonts/Charlemagne.ttf") format("truetype"),
+}
+@media only screen and (min-width: 700px) and (max-width: 2500px) {
+    /*Barry PAGE*/
+    /* This layout works for a Lenovo Ideapas 330 (15) with a width resolution of 1366px */
+    /*It's my mom laptop I tested this on*/
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 75% 5%;
+    }
+    html{
+        background-color: black;
+        color: red;
+    }
+    hr{
+        visibility: hidden;
+    }
+    button{
+        color: red;
+        background-color: black;
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-family: "barry";
+    }
+    .head > .username{
+        position: absolute;
+        left: 810px;
+        top: 85px;
+    }
+    .head > .password{
+        position: absolute;
+        left: 810px;
+        top: 110px;
+    }
+    .head > .login{
+        position: absolute;
+        left: 934px;
+        top: 140px;
+    }
+    .head > .create{
+        position: absolute;
+        left: 810px;
+        top: 140px;
+    }
+    .gabba{
+        font-size: 400%;
+    }
+    .barry{
+        width: 10%;
+    }
+    .details{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+        font-weight: bold;
+        border-right: 2px red solid;
+    }
+    .explain, .summary{
+        text-decoration: underline;
+    }
+    .blog{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .blog > .blog1{
+        font-size: 150%;
+    }
+    .finalimg{
+        width: 70%;
+        float: left;
+        border-top: 2px red solid;
+        border-right: 2px red solid;
+        border-bottom: 2px red solid;
+    }
+    .finalimg2{
+        width: 70%;
+        float:left;
+        border-top: 2px red solid;
+        border-right: 2px red solid;
+        border-bottom: 2px red solid;
+    }
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*Create Account PAGE*/
+    .goomba{
+        font-size: 450%;
+        text-align: center;
+    }
+    .loginpic{
+        width:20%;
+    }
+    
+    .loginform{
+        text-align: center;
+    }
+    label{
+        font-weight: bold;
+        text-align: left;
+    }
+    .inputadjust{
+        position: relative;
+        
+    }
+    .barryposter{
+        width: 80%;
+    }
+    .gobacktxt{
+        text-align: center;
+        font-size: 200%;
+    }
+    .goback{
+        width: 30%;
+    }
+}
+    
+    @media only screen and (min-width: 351px) and (max-width: 699px) {
+        /*Barry PAGE*/
+        /* This layout would work with a Apple iPhone 3GS at 480px width.*/
+        html{
+            background-color: black;
+            color: red;
+        }
+        button{
+            color: red;
+            background-color: black;
+        }
+        .head{
+            font-family: "barry";
+        }
+        .head> .username{
+            position: absolute;
+            top:85px;
+            left: 25px;
+        }
+        .head > .password{
+            position: absolute;
+            top: 110px;
+            left: 25px;
+        }
+        .head > .login{
+            position: absolute;
+            left: 220px;
+            top: 97px;
+        }
+        .head > .create{
+            position: absolute;
+            left: 320px;
+            top: 97px;
+        }
+        .gabba{
+            font-size: 200%;
+        }
+        .barry{
+            width: 20%;
+        }
+        .details{
+            text-align: center;
+    
+        }
+        .explain, .summary{
+            font-weight: bold;
+        }
+        .profile1, .profile2, .profile3{
+            text-align: middle;
+        }
+        
+        .blog > .blog1{
+            font-size: 150%;
+            text-align: center;
+        }
+        .finalimg{
+            width: 100%;
+            border: 2px red solid;
+        }
+        .finalimg2{
+            width: 100%;
+            border: 2px red solid;
+        }
+        /*Create Account PAGE*/
+        .goomba{
+            font-size: 200%;
+            text-align: center;
+        }
+        .loginpic{
+            width:20%;
+        }
+        .loginform{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+            text-align: left;
+        }
+        .inputadjust{
+            position: relative;
+            
+        }
+        .barryposter{
+            width: 80%;
+        }
+        .gobacktxt{
+            text-align: center;
+            font-size: 200%;
+        }
+        .goback{
+            width: 30%;
+        }
+
+    }
+    @media only screen and (max-width: 350px) {
+        /*Barry PAGE*/
+        /*BOTH PAGES Works on 300px width, that is my specified layout. This should work for an IPhone 4 Layout*/
+        /* I did this laout as a homage to the series, because Barry is shown recently going to LA with only a iPhone 4*/
+        html{
+            background-color: black;
+            color: red
+        }
+        button{
+            color: red;
+            background-color: black;
+        }
+        .head{
+            font-family: "barry";
+            font-size: 120%;
+            text-align: center;
+        }
+        .barry{
+            width: 15%;
+        }
+        .details{
+            text-align: center;
+    
+        }
+        .explain, .summary{
+            font-weight: bold;
+        }
+        .profile1, .profile2, .profile3{
+            text-align: left;
+        }
+        .ruby, .alex, .safeer{
+            float:left;
+        }
+        .blog > .blog1{
+            font-size: 150%;
+            text-align: center;
+        }
+        .finalimg1{
+            width: 100%;
+            border: 2px red solid;
+        }
+        .finalimg2{
+            width: 100%;
+            border: 2px red solid;
+        }
+        /*Create Account PAGE*/
+        .loginpic{
+            width:20%;
+        }
+        .loginform{
+            text-align: center;
+            padding: 10%;
+        }
+        label{
+            font-weight: bold;
+        }
+        .barryposter{
+            width: 100%;
+        }
+        .gobacktxt{
+            text-align: center;
+            font-size: 200%;
+        }
+        .goback{
+            width: 100%;
+        }
+
+    
+    
+    }
+    

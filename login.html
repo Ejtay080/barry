@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" text="type/css" href="css/mediaquery.css">
+    </head>
+    <body>
+        <script src="js/login.js"></script>
+        <div class="head">
+            <p class="goomba">Welcome to the <img src="images/login.png" class="loginpic"> Fan-Page!</p>
+            <!--This is where the js form is placed. Creates a login page in the top right corner. That page is a button that is labeled create account, this button will lead to a create account page, where it is a form that you fill out to create an account on the webpage. Obviously it doesnt work, but it will look real.-->
+        </div>
+        <div class="loginform">
+            <form method="GET">
+                <label>First Name:</label>
+                <br>
+                <input type="text" name="fname" class="inputadjust" required>
+                <br>
+                <label>Last Name:</label>
+                <br>
+                <input type="text" name="lname" class="inputadjust" required>
+                <br>
+                <label>E-Mail:</label>
+                <br>
+                <input type="email" name="email" class="inputadjust" required>
+                <br>
+                <label>Password:</label>
+                <br>
+                <input type="password" name="password" class="inputadjust" required>
+                <br>
+                <label>Confirm Password:</label>
+                <br>
+                <input type="password" name="password" class="inputadjust" required>
+                <br>
+                <label>Date of Birth:</label>
+                <br>
+                <input type="date" name="birthday" class="inputadjust" required>
+                <br>
+                <button onclick="refreshPage()" type="submit">Submit</button>
+            </form>
+            <br>
+            <a href="https://www.hbo.com/barry"><img src="images/barry.jpg" class="barryposter"></a>
+        </div>
+        <div class="foot">
+            <h2 style="text-align: center;">© Website By Ethan Tayloe. Barry is entirely made by HBO, it has no association with me.</h2>
+        </div>
+        <div>
+            <a href="barry.html"><img src="images/goback.png" class="goback"></a>
+        </div>
+    </body>
+</html>
